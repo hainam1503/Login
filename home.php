@@ -12,8 +12,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 </head>
 <body>
      <h2>Hello, <?php echo $_SESSION['fullname']; ?></h2>
+     <a href="logout.php">Logout</a>
      <div class="top">
-          <a href="logout.php">Logout</a>
      </div>
           
 </body>
@@ -21,15 +21,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
     h2{
           text-align: center;
           color: #fff;
-          vertical-align: top;
-          margin-left: 75%;
-          height:90%;
      }
-     .top{
+     //*.top{
           width: 81%;
           height: 100%;
           border: 3px;
-     }
+     }*//
 </style>
 </html>
 
